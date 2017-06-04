@@ -1,0 +1,156 @@
+{
+  "vertices": [
+    {
+      "id": 0,
+      "label": "vertex",
+      "properties": {
+        "geo": [
+          {
+            "id": 4,
+            "value": "India",
+            "label": "geo"
+          }
+        ],
+        "userguid": [
+          {
+            "id": 2,
+            "value": "AAD134ASDFASD",
+            "label": "userguid"
+          }
+        ],
+        "name": [
+          {
+            "id": 3,
+            "value": "Arvind",
+            "label": "name"
+          }
+        ],
+        "label": [
+          {
+            "id": 1,
+            "value": "user",
+            "label": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "label": "vertex",
+      "properties": {
+        "geo": [
+          {
+            "id": 9,
+            "value": "India",
+            "label": "geo"
+          }
+        ],
+        "userguid": [
+          {
+            "id": 7,
+            "value": "AAD134ASDFASD",
+            "label": "userguid"
+          }
+        ],
+        "name": [
+          {
+            "id": 8,
+            "value": "Prince",
+            "label": "name"
+          }
+        ],
+        "label": [
+          {
+            "id": 6,
+            "value": "user",
+            "label": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "label": "vertex",
+      "properties": {
+        "geo": [
+          {
+            "id": 14,
+            "value": "India",
+            "label": "geo"
+          }
+        ],
+        "userguid": [
+          {
+            "id": 12,
+            "value": "AAD134ASDFASD",
+            "label": "userguid"
+          }
+        ],
+        "name": [
+          {
+            "id": 13,
+            "value": "Raj",
+            "label": "name"
+          }
+        ],
+        "label": [
+          {
+            "id": 11,
+            "value": "user",
+            "label": "label"
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "label": "vertex",
+      "properties": {
+        "product": [
+          {
+            "id": 19,
+            "value": "photoshop",
+            "label": "product"
+          }
+        ],
+        "event_dts": [
+          {
+            "id": 18,
+            "value": "2017-01-01",
+            "label": "event_dts"
+          }
+        ],
+        "label": [
+          {
+            "id": 16,
+            "value": "Event",
+            "label": "label"
+          }
+        ],
+        "event_category": [
+          {
+            "id": 17,
+            "value": "download",
+            "label": "event_category"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": 20,
+      "label": "downloads",
+      "inVLabel": "vertex",
+      "outVLabel": "vertex",
+      "inV": 15,
+      "outV": 0,
+      "properties": {
+        "event_dts": {
+          "key": "event_dts",
+          "value": "2017-01-01"
+        }
+      }
+    }
+  ]
+}
