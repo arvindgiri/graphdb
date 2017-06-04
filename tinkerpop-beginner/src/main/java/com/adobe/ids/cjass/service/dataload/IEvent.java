@@ -17,9 +17,9 @@ public interface IEvent {
 
     void setUserId(String userId);
 
-    String getEventCategory();
+    String getCategory();
 
-    void setEventCategory(String eventCategory);
+    void setCategory(String eventCategory);
 
     String getEventSubCategory();
 

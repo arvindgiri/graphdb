@@ -1,3 +1,12 @@
-{"id":0,"label":"user","properties":{"name":[{"id":1973169669,"value":"Arvind"}],"id":[{"id":3404,"value":"1"}]}}
-{"id":1,"label":"user","properties":{"name":[{"id":-1892743179,"value":"Prince"}],"id":[{"id":3406,"value":"2"}]}}
-{"id":2,"label":"user","properties":{"name":[{"id":3455624,"value":"Raj"}],"id":[{"id":3408,"value":"3"}]}}
+{"id":"RD2","label":"event","inE":{"next":[{"id":51,"outV":"3"}],"lastInsertedEvent":[{"id":52,"outV":"3"}]},"properties":{"product":[{"id":50,"value":"muse"}],"eventDts":[{"id":49,"value":1496580181742}],"category":[{"id":48,"value":"download"}],"userId":[{"id":47,"value":"3"}]}}
+{"id":"AD1","label":"event","properties":{"product":[{"id":6,"value":"photoshop"}],"eventDts":[{"id":5,"value":1496580181524}],"category":[{"id":4,"value":"download"}],"userId":[{"id":3,"value":"1"}]}}
+{"id":"AD2","label":"event","inE":{"next":[{"id":12,"outV":"1"}]},"properties":{"product":[{"id":11,"value":"illustrator"}],"eventDts":[{"id":10,"value":1496580181687}],"category":[{"id":9,"value":"download"}],"userId":[{"id":8,"value":"1"}]}}
+{"id":"AD3","label":"event","inE":{"next":[{"id":18,"outV":"1"}]},"properties":{"product":[{"id":17,"value":"acrobat"}],"eventDts":[{"id":16,"value":1496580181692}],"category":[{"id":15,"value":"download"}],"userId":[{"id":14,"value":"1"}]}}
+{"id":"AD4","label":"event","inE":{"next":[{"id":23,"outV":"1"}],"lastInsertedEvent":[{"id":24,"outV":"1"}]},"properties":{"eventDts":[{"id":22,"value":1496580181696}],"category":[{"id":21,"value":"f2p"}],"userId":[{"id":20,"value":"1"}]}}
+{"id":"1","label":"user","outE":{"next":[{"id":18,"inV":"AD3"},{"id":23,"inV":"AD4"},{"id":12,"inV":"AD2"}],"lastInsertedEvent":[{"id":24,"inV":"AD4"}]},"properties":{"name":[{"id":0,"value":"Arvind"}]}}
+{"id":"2","label":"user","outE":{"next":[{"id":34,"inV":"PD2"},{"id":40,"inV":"PD3"}],"lastInsertedEvent":[{"id":41,"inV":"PD3"}]},"properties":{"name":[{"id":1,"value":"Prince"}]}}
+{"id":"3","label":"user","outE":{"next":[{"id":51,"inV":"RD2"}],"lastInsertedEvent":[{"id":52,"inV":"RD2"}]},"properties":{"name":[{"id":2,"value":"Raj"}]}}
+{"id":"PD1","label":"event","properties":{"product":[{"id":28,"value":"photoshop"}],"eventDts":[{"id":27,"value":1496580181703}],"category":[{"id":26,"value":"download"}],"userId":[{"id":25,"value":"2"}]}}
+{"id":"PD3","label":"event","inE":{"next":[{"id":40,"outV":"2"}],"lastInsertedEvent":[{"id":41,"outV":"2"}]},"properties":{"product":[{"id":39,"value":"acrobat"}],"eventDts":[{"id":38,"value":1496580181723}],"category":[{"id":37,"value":"download"}],"userId":[{"id":36,"value":"2"}]}}
+{"id":"RD1","label":"event","properties":{"product":[{"id":45,"value":"dreamweaver"}],"eventDts":[{"id":44,"value":1496580181732}],"category":[{"id":43,"value":"download"}],"userId":[{"id":42,"value":"3"}]}}
+{"id":"PD2","label":"event","inE":{"next":[{"id":34,"outV":"2"}]},"properties":{"product":[{"id":33,"value":"illustrator"}],"eventDts":[{"id":32,"value":1496580181716}],"category":[{"id":31,"value":"download"}],"userId":[{"id":30,"value":"2"}]}}

@@ -1,5 +1,4 @@
 import com.adobe.ids.cjass.service.dataload.*;
-import org.apache.tinkerpop.gremlin.neo4j.structure.Neo4jGraph;
 import org.apache.tinkerpop.gremlin.structure.Graph;
 import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph;
 
@@ -24,8 +23,7 @@ public class IdsGraph {
     }
 
     public static void main(String[] args) throws Exception {
-        //Graph graph = TinkerGraph.open();
-        Graph graph = Neo4jGraph.open("/home/arvind/apps/neo4j-community-3.2.0/data/databases/ids.db");
+        Graph graph = TinkerGraph.open();
         IdsGraph idsGraph = new IdsGraph(graph);
 
     }

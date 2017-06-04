@@ -51,11 +51,11 @@ public class Event implements IEvent {
         this.userId = userId;
     }
 
-    public String getEventCategory() {
+    public String getCategory() {
         return eventCategory;
     }
 
-    public void setEventCategory(String eventCategory) {
+    public void setCategory(String eventCategory) {
         this.eventCategory = eventCategory;
     }
 

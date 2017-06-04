@@ -97,7 +97,15 @@ public class DataLoaderService implements IDataLoaderService {
 
     private Vertex getEventVertex(IEvent event) {
         Vertex eventVertex = createVertex(CjaasConst.LABEL_EVENT, event.getEventGuid());
+        addProperty(eventVertex, P.USER_ID, event.getUserId());
+        addProperty(eventVertex, P.CATEGORY, event.getCategory());
+        addProperty(eventVertex, P.EVENT_DTS, event.getEventDts());
 
+        Iterator<Map.Entry<String, String>> iterator = event.getProperties();
+        while (iterator.hasNext()) {
+            Map.Entry<String, String> mapRecord = iterator.next();
+            addProperty(eventVertex, mapRecord.getKey(), mapRecord.getValue());
+        }
         return eventVertex;
     }
 
@@ -115,8 +123,9 @@ public class DataLoaderService implements IDataLoaderService {
     private Vertex getVertex(String label, String id) {
         Vertex vertex;
         if (supportsUserSuppliedIDs) {
-            vertex = graph.traversal().V(id).has(label).next();
+            vertex = graph.traversal().V(id).hasLabel(label).next();
         } else {
+            //Not tested
             vertex = graph.traversal().V().has(P.ID, id).has(label).next();
         }
         return vertex;

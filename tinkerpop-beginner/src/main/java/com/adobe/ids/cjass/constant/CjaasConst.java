@@ -12,5 +12,5 @@ public interface CjaasConst {
     String LABEL_EVENT = "event";
 
     //TODO Move below constant to application.properties
-    String GRAPH_FILE_LOCATION = "/home/arvind/Workspace/github/graphdb/tinkerpop-beginner/src/main/resources/idsGraph.json";
+    String GRAPH_FILE_LOCATION = "/home/arvind/Workspace/github/arvindgiri/graphdb/tinkerpop-beginner/src/main/resources/idsGraph.json";
 }
